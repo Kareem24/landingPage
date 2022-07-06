@@ -70,7 +70,7 @@ nav{
     background: rgba(220, 219, 219, 0.546);
     width: 100%;
     height: 90vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 
     
@@ -136,9 +136,9 @@ nav{
 /* About section */
 .about{
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: rgba(203, 199, 199, 0.989);
-    height: 120vh;
+    /* height: 120vh; */
 
 }
 
@@ -185,7 +185,7 @@ h3{
 .article-col .col-content img{
     margin: 0 0 15px;
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
 }
 .small-container{
     margin: 0 8px;
@@ -207,12 +207,12 @@ h3{
 .article{
     background: rgba(220, 219, 219, 0.546);
     /* margin: 10px 0 20px; */
-    height: 150vh;
+    /* height: 150vh; */
     align-items: flex-start;
 }
 .footer{
     background: rgb(36, 6, 36);
-    height: 40vh;
+    /* height: 40vh; */
     overflow: hidden;
 }
 .footer-row{
@@ -259,30 +259,99 @@ small{
     
 }
 
-@media(max-width:1000px){
-    /* .fa{
+@media(max-width:700px){
+  .nav-row {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    /* z-index: -1; */
+    
+
+  }
+  .logo-col{
+    flex-basis: 50%;
+  }
+  .link-col{
+    flex-basis: 50%;
+  }
+.btn-col{
+    display: none;
+} 
+.link-col ul li{
+    display:block ;
+    list-style: none;
+    padding: 0 12px;
+    /* position: absolute; */
+}
+.info-row{
+    display: block;
+}
+.text-col{
+    flex-basis: 100%;
+}
+.image-col{
+    display: none;
+}
+.info-header h2,h3{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 20px 0;
+    
+
+}
+.text-col{
+    flex-basis: 40%;
+    margin: 170px 20px 0;
+    overflow: hidden;
+
+}
+.about-row,.article-row{
+    display: block;
+    /* align-items: center; */
+    
+}
+.about-col,.article-col{
+    flex-basis: 100%;
+    width: 100%;
+    margin: 70px 10px;}
+    .footer-row{
         display: block;
-        z-index: 4;
-    } */
-    /* #navLinks{
-        display: block;
-    } */
-    .link-col{
+        align-items: center;
+        text-align: center;
         
-        /* background-color: #f44336; */
+        margin:40px 100px;
+    }
+    .btn-col2, .logo-col{
+        flex-basis: 100%;
+    }
+    .link-col2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin:5px 15px;
+    }
+    .foot-col{
+        flex-basis: 50%;
+    }
+    .btn-col2 .btn{
+        visibility: hidden;
+    }
+    .foot-col a{
+        
+        line-height: 2;
+        margin: auto -2px;
+        white-space:nowrap;
+    }
+    .btn-col2{
+       
+        /* margin-left: 180px; */
+        text-align: center;
         
     }
-    .link-col ul li{
-        position: absolute;
-        width: 200px;
-        height: 100vh;
-        top:0;
-        right: 0px;
-        text-align: left;
-        z-index: 3;
-        transition: 1s;
-    }
-    .btn-col button{
-        display:none;
-    }
+
+
+.media-container{
+    margin: 20px 15px;
+}
+    
 }
