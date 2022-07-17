@@ -187,6 +187,10 @@ h3{
     width: 100%;
     /* height: 200px; */
 }
+.article-col .col-content .image1{
+    height: 157px;
+
+}
 .small-container{
     margin: 0 8px;
 }
